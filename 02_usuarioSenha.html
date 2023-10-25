@@ -6,6 +6,15 @@
     */
 
     //Entrada
+    let usuario = prompt('Insira um nome de usuário:');
+    let senha = prompt('Insira sua senha:');
+    while (usuario == senha) {
+        alert('O nome de usuário nao pode ser igual a senha:')
+        usuario = prompt('Insira um nome de usuário:');
+        senha = prompt('Insira sua senha:');
+
+    }
+    alert(`Cadastro efetuado com sucesso!`)
 
 
     //Processamento

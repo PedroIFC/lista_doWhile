@@ -6,6 +6,12 @@
     */
 
     //Entrada
+    let nota = Number(prompt('Informe uma nota entre zero e dez'));
+    while (nota < 0 || nota > 10 || isNaN(nota)) {
+       alert('Valor Inválido!') ;
+       nota = Number(prompt('Informe uma nota entre zero e dez'));
+    }
+    alert(`${nota}`);
 
 
     //Processamento
