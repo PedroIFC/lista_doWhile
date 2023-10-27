@@ -6,8 +6,17 @@
     */
 
     //Entrada
+    let populacaoA = 80000;
+    let populacaoB = 200000;
+    let anos = 0;
 
+    while (populacaoA <= populacaoB) {
+        populacaoA *= 1.03;
+        populacaoB *= 1.015;
+        anos++;
 
+    }
+    alert(`Serão necessários ${anos} anos até que a população do país A ultrapasse a população do país B.`);
     //Processamento
 
 

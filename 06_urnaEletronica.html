@@ -20,6 +20,53 @@
     */
 
     //Entrada
+    let candidatoUm = 0;
+    let candidatoDois = 0;
+    let nulo = 0;
+    let branco = 0;
+
+
+    let urna = 1;
+    while (urna !== 0) {
+        urna = Number(prompt(" 1. Candidato Joãozinho, 2. Candidato Mariazinha, 3. Nulo, 4. Branco. Entre com o seu voto:"));
+
+        if (urna == 1) {
+            candidatoUm++
+        }
+        else if (urna == 2) {
+            candidatoDois++
+        }
+        else if (urna == 3) {
+            nulo++
+        }
+        else if (urna == 4) {
+            branco++
+        }
+        else if (urna == 0) {
+            null
+        }
+        else {
+            alert(`Voto Invalido!`)
+        }
+
+
+
+    }
+
+    document.write(`Votos no Joãozinho ${candidatoUm} , votos na Mariazinha ${candidatoDois} , porcentagem de votos nulos ${(nulo / (candidatoUm + candidatoDois + nulo + branco)) * 100}% , porcentagem de votos brancos ${(branco / (candidatoUm + candidatoDois + nulo + branco)) * 100}%, <br>`)
+    if (candidatoUm > candidatoDois) {
+        document.write('Joãozinho foi o vencedor.');
+
+    } else if (candidatoDois > candidatoUm) {
+        document.write('Mariazinha foi a vencedora.')
+    }
+    else {
+        document.write('Empate.')
+    }
+
+
+
+
 
 
     //Processamento
@@ -28,5 +75,3 @@
     //Saída
 
 </script>
-
-
